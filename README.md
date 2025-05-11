@@ -29,14 +29,22 @@ The model is evaluated using **mean Average Precision (mAP)**, which averages th
 
 ### Implementation Details
 
-The model is implemented using **Python** and the **PyTorch** framework. The ResNet50 backbone is pre-trained on ImageNet, and the YOLO-style detection head is customized for the Pascal VOC dataset. The model is trained using a combination of:
-- **Cross-entropy loss** for classification
-- **Smooth L1 loss** for bounding box regression
+The model is implemented using **Python** and the **PyTorch** framework. The ResNet50 backbone is pre-trained on ImageNet, and the YOLO-style detection head is customized for the Pascal VOC dataset. 
+
+**Loss Components**:
+
+- box_loss: Loss related to bounding box predictions (both coordinates and dimensions).
+
+- object_loss: Loss related to predicting object confidence (whether there is an object in a grid cell).
+
+- no_object_loss: Loss related to predicting no object in grid cells.
+
+- class_loss: Loss related to classification of object classes
 
 Training hyperparameters:
-- **Learning Rate**: 0.001
-- **Batch Size**: 16
-- **Epochs**: 50
+- **Learning Rate**: 2e-5
+- **Batch Size**: 8
+- **Epochs**: 1000
 - **Optimizer**: Adam
 
 Data augmentation techniques like random flipping, scaling, and cropping are applied to improve model generalization.
