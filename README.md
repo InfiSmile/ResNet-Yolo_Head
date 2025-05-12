@@ -19,7 +19,7 @@ The model consists of two main components:
 
 ### Dataset
 
-The **Pascal VOC** dataset is used for training and testing the model. It contains 20 object classes and includes both classification and localization annotations. Trained on **100 samples** of the dataset.
+The **Pascal VOC** dataset is used for training and testing the model. It contains 20 object classes and includes both classification and localization annotations. The model was trained on a subset of 100 samples from the dataset.
 
 ### Evaluation Metric
 
