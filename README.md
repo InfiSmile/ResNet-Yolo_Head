@@ -19,7 +19,7 @@ The model consists of two main components:
 
 ### Dataset
 
-The **Pascal VOC** dataset is used for training and testing the model. It contains 20 object classes and includes both classification and localization annotations. 
+The **Pascal VOC** dataset is used for training and testing the model. It contains 20 object classes and includes both classification and localization annotations. Trained on **100 samples** of the dataset.
 
 ### Evaluation Metric
 
@@ -47,18 +47,24 @@ Training hyperparameters:
 - **Epochs**: 1000
 - **Optimizer**: Adam
 
-Data augmentation techniques like random flipping, scaling, and cropping are applied to improve model generalization.
-
 
 ## Results
 
 The model’s performance is evaluated on the **Pascal VOC test set**.
 
-| **Mean Average Precision (mAP)** | **84.5** |
+| **Mean Average Precision (mAP)** | **58.73** |
+Here are the few test data images with the visualization of bounding box :
+![image](https://github.com/user-attachments/assets/cf9ef8e2-80c0-4a1a-b951-3ce39af53936)
+![Screenshot 2025-05-12 163303](https://github.com/user-attachments/assets/46123419-d416-415c-9a41-0aa8af350158)
+![Screenshot 2025-05-12 163229](https://github.com/user-attachments/assets/15ab72fb-cdfe-4fce-aa9a-2b5666bd6079)
 
-As shown, the model achieves an overall **mAP of 84.5%**. It performs particularly well on different classes of the dataset.
+Model will be more generalizable if trained on more data with proper hypertuning.
+
+
+
+
 
 ## Conclusion
 
-In this project, we successfully built an object detection model using **ResNet50** as the backbone and a **YOLO-style detection head**. The model was trained and evaluated on the **Pascal VOC dataset**, achieving an **mAP of 84.5%**.
+In this project, we successfully built an object detection model using **ResNet50** as the backbone and a **YOLO-style detection head**. The model was trained and evaluated on the **Pascal VOC dataset**, achieving an **mAP of 58.73%**.
 
