@@ -19,7 +19,7 @@ The model consists of two main components:
 
 ### Dataset
 
-The **Pascal VOC** dataset is used for training and testing the model. It contains 20 object classes and includes both classification and localization annotations. The model was trained on a subset of 100 samples from the dataset.
+The **Pascal VOC** dataset is used for training and testing the model. It contains 20 object classes and includes both classification and localization annotations. The model was trained on a subset of 100 samples from the dataset. Link to the dataset: https://www.kaggle.com/datasets/aladdinpersson/pascalvoc-yolo
 
 ### Evaluation Metric
 
@@ -60,7 +60,7 @@ Here are the few test data images with the visualization of bounding box :
 
 Model will be more generalizable if trained on more data with proper hypertuning.
 
-
+**Trained model weights (drive link)** : https://drive.google.com/file/d/135XI-5wnvg98-7WHR5EEgRHfE8H87pek/view?usp=sharing
 
 
 
