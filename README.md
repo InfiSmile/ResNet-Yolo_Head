@@ -1,7 +1,7 @@
 
 # Object Detection using ResNet50 with YOLO-style Detection Head on Pascal VOC Dataset
 
-This project implements an object detection model using ResNet50 as the backbone and a YOLO-style detection head. The model is trained and evaluated on the Pascal VOC dataset, using mean Average Precision (mAP) as the evaluation metric. This document provides an overview of the model's architecture, dataset, experimental setup, results, and performance analysis.
+
 
 ## Introduction
 
